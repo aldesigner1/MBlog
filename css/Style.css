@@ -1,0 +1,360 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, label {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "product sans" !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+input[type="text"]:focus {
+  outline: none; }
+
+.Rounais {
+  font-family: 'zilap urban'; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none !important; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+img, video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+td:not([align]), th:not([align]) {
+  text-align: left; }
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "Black Sans";
+  src: url("CustomFont.eot");
+  src: url("CustomFont.woff") format("woff"), url("Assets/fonts/blacksansboldwebfont949ef363c646d9c2456af9d67a94778f.otf") format("opentype"); }
+
+/** Colorimetrie **/
+/**  Couleurs MBlog  **/
+/** Taille de Police **/
+/** Bordure de carte **/
+/** Ombre **/
+/** Scroll **/
+/** Watch-Screen ***/
+/** Smart-Screen ***/
+/** Tablet-Screen ***/
+/** PC-Screen ***/
+body {
+  overflow: hidden !important;
+  width: 100%;
+  height: 100vh;
+  font-family: "Product sans","Black sans", arial !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+@media only screen and (max-width: 3840px) {
+  #BigStick {
+    position: fixed;
+    top: -200px;
+    right: -100px; }
+  #SmallStick {
+    position: fixed;
+    bottom: 0px;
+    left: 35%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 70px; }
+  #copyrighting {
+    font-size: 12px;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #627d9d;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: .5px; }
+    #copyrighting:hover {
+      text-decoration: underline; }
+  .principale {
+    width: 40%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 20px 40px 0 !important; }
+    .principale #logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 100px !important; }
+    .principale .punchline {
+      height: 200px;
+      width: 100%; }
+      .principale .punchline #nomSite {
+        color: #627d9d;
+        font-size: 17px; }
+      .principale .punchline .slogan {
+        font-size: 40.5px;
+        font-family: "Black sans" !important;
+        font-weight: bold;
+        letter-spacing: -2px;
+        margin-top: 20px !important;
+        max-width: 450px !important; }
+      .principale .punchline .carou {
+        width: auto;
+        height: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 20px; }
+      .principale .punchline #dot {
+        width: 35px !important;
+        height: 10px !important;
+        border-radius: 50px;
+        background: #E6E6E6;
+        margin-right: 5px !important; }
+        .principale .punchline #dot:first-child {
+          background: #ff9900; }
+    .principale form {
+      height: 180px;
+      width: 100%;
+      position: relative; }
+      .principale form #signInBtn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 250px;
+        height: 45px;
+        border-radius: 50px;
+        background: #ff9900;
+        color: #fff;
+        text-align: center;
+        margin: 0 !important;
+        font-size: 18.7px; }
+        .principale form #signInBtn:hover {
+          background: #FF8C00;
+          -webkit-box-shadow: 2px 3px 4px #ccc;
+          box-shadow: 2px 3px 4px #ccc;
+          -webkit-transition: .5s ease;
+          -o-transition: .5s ease;
+          transition: .5s ease; }
+      .principale form #signUpBtn, .principale form #aboutBtn {
+        position: absolute;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100px !important;
+        height: 35px !important;
+        border-radius: 50px;
+        border: 1px solid #E6E6E6;
+        margin: 0 !important;
+        padding-top: 7px !important;
+        text-align: center;
+        color: #627d9d; }
+        .principale form #signUpBtn:hover, .principale form #aboutBtn:hover {
+          background: #627d9d;
+          border-color: transparent;
+          color: #fff;
+          -webkit-transition: .5s ease;
+          -o-transition: .5s ease;
+          transition: .5s ease; }
+      .principale form #aboutBtn {
+        left: 150px; }
+      .principale form #signUpBtn {
+        left: 0px; }
+  .decorative {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .decorative img {
+      margin-top: 100px !important;
+      width: 70%;
+      height: auto; } }
+
+@media only screen and (max-width: 668px) {
+  body, html {
+    position: relative;
+    overflow: hidden !important;
+    width: 100%;
+    height: 100vh; }
+  #BigStick {
+    position: fixed;
+    top: -70px;
+    right: -90px;
+    max-width: 180px;
+    width: 50%;
+    height: auto;
+    z-index: 100; }
+  #SmallStick {
+    position: fixed;
+    left: 15%;
+    bottom: -10px;
+    width: 80px;
+    height: auto; }
+  #copyrighting {
+    display: none; }
+  .decorative {
+    display: none; }
+  .principale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    padding: 0 10px !important; }
+    .principale #logo {
+      width: 50%;
+      height: auto;
+      margin-bottom: 40px !important; }
+    .principale .punchline {
+      height: 130px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .principale .punchline #nomSite {
+        font-size: 13px; }
+      .principale .punchline .slogan {
+        font-size: 25px;
+        letter-spacing: -1.5px;
+        margin: 0 !important;
+        max-width: 250px !important; }
+      .principale .punchline .carou {
+        margin: 15px 0 15px !important; }
+      .principale .punchline #dot {
+        width: 15px !important;
+        height: 5px !important;
+        background: #627d9d; }
+    .principale form {
+      height: 150px;
+      width: 100%;
+      margin: 30px 0 0 0;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-top: 10px; }
+      .principale form #signInBtn {
+        width: 150px;
+        height: 40px;
+        font-weight: bold;
+        letter-spacing: .5px;
+        font-size: 15.6px; }
+      .principale form #signUpBtn {
+        display: block;
+        width: 150px;
+        height: 40px;
+        left: -35px;
+        border-radius: 0 50px 50px 0;
+        margin-top: 3px !important;
+        padding: 8px 0 0 13px !important;
+        font-size: 13px; }
+      .principale form #aboutBtn {
+        display: block;
+        width: 150px;
+        height: 40px;
+        left: auto !important;
+        right: -35px;
+        border-radius: 50px 0 0 50px;
+        margin-top: 3px !important;
+        font-size: 13px;
+        padding: 8px 13px 0 0 !important; } }
+
+@media only screen and (max-height: 600px) {
+  #BigStick {
+    display: none !important; }
+  #SmallStick {
+    width: 75px !important;
+    height: auto; }
+  form {
+    height: 150px !important;
+    margin-top: 10px !important; } }

@@ -1,0 +1,14 @@
+
+$watch: 320px !default;
+$smart: 668px !default;
+$tablet: 1080px !default;
+$pc: 3840px !default;
+
+/** Watch-Screen ***/
+$watch-screen: "only screen and (max-width: #{$watch})";
+/** Smart-Screen ***/
+$smart-screen: "only screen and (max-width: #{$smart})";
+/** Tablet-Screen ***/
+$tablet-screen: "only screen and (max-width: #{$tablet})";
+/** PC-Screen ***/
+$pc-screen: "only screen and (max-width: #{$pc})";

@@ -1,0 +1,233 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, label {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "product sans" !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+input[type="text"]:focus {
+  outline: none; }
+
+.Rounais {
+  font-family: 'zilap urban'; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none !important; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+img, video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+td:not([align]), th:not([align]) {
+  text-align: left; }
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "Black Sans";
+  src: url("CustomFont.eot");
+  src: url("CustomFont.woff") format("woff"), url("Assets/fonts/blacksansboldwebfont949ef363c646d9c2456af9d67a94778f.otf") format("opentype"); }
+
+/** Colorimetrie **/
+/**  Couleurs MBlog  **/
+/** Taille de Police **/
+/** Bordure de carte **/
+/** Ombre **/
+/** Scroll **/
+/** Watch-Screen ***/
+/** Smart-Screen ***/
+/** Tablet-Screen ***/
+/** PC-Screen ***/
+body {
+  overflow: hidden !important;
+  width: 100%;
+  height: 100vh;
+  font-family: "Product sans","Black sans", arial !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #E6E6E6; }
+
+@media only screen and (max-width: 3840px) {
+  .articleHeader {
+    width: 50%;
+    height: 150px;
+    background: #fff;
+    padding: 20px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    border-bottom: 1px solid #E6E6E6; }
+  .arti {
+    background: #fff;
+    width: 50%;
+    height: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 35px 100px !important;
+    overflow-y: scroll; }
+    .arti #alaune {
+      height: auto;
+      width: 100%;
+      max-width: 100%; }
+    .arti .sujet {
+      font-size: 36px;
+      font-weight: 1000;
+      letter-spacing: -1px;
+      margin: 20px auto !important;
+      text-align: center;
+      color: #000; }
+      .arti .sujet:hover {
+        color: #ff9900; }
+    .arti .introduction {
+      width: 100%;
+      text-align: justify;
+      font-size: 17px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      margin: 20px auto !important;
+      color: #68768A; }
+      .arti .introduction:hover {
+        color: #000; }
+    .arti .keyword {
+      font-weight: bold; }
+    .arti .branche {
+      margin: 30px auto !important;
+      border-top: 1px solid transparent; }
+      .arti .branche:hover {
+        border-top: 1px solid #CDCDCD; }
+        .arti .branche:hover p {
+          color: #000; }
+      .arti .branche .titre1 {
+        font-size: 26.4px;
+        font-weight: 1000;
+        font-family: "product sans black";
+        margin: 15px auto 15px !important; }
+        .arti .branche .titre1:hover {
+          text-decoration: underline;
+          color: #ff9900; }
+      .arti .branche .parag {
+        width: 100%;
+        text-align: justify;
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        margin: 30px auto !important;
+        color: #68768A; }
+      .arti .branche .cta {
+        background: #fff;
+        padding: 10px 35px !important;
+        border-radius: 5px;
+        color: #627d9d;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 35px auto !important;
+        border: 1px solid #E6E6E6; }
+        .arti .branche .cta:hover {
+          color: #fff;
+          background: #ff9900;
+          -webkit-transition: 1s ease;
+          -o-transition: 1s ease;
+          transition: 1s ease; }
+    .arti .enumeration {
+      width: 80%;
+      height: auto;
+      padding: 30px !important;
+      border: 1px solid #E6E6E6;
+      border-radius: 15px;
+      list-style: none;
+      margin: 30px auto !important; }
+      .arti .enumeration li {
+        margin: 20px auto !important; }
+        .arti .enumeration li a {
+          color: #627d9d; }
+          .arti .enumeration li a:hover {
+            color: #ff9900; }
+      .arti .enumeration:hover {
+        border-color: #627d9d;
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease; } }
+
+@media only screen and (max-width: 668px) {
+  .articleHeader {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    padding: 20px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    border-bottom: 1px solid #E6E6E6; }
+  .arti {
+    background: #fff;
+    width: 100%;
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 20px 100px !important;
+    overflow-y: scroll; }
+    .arti .enumeration {
+      width: 100%; } }

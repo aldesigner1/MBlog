@@ -1,0 +1,316 @@
+@import "libs/reset";
+@import "libs/theme";
+@import "libs/responsive";
+
+
+body{
+  overflow: hidden !important;
+  width: 100%;
+  height: 100vh;
+  font-family: "Product sans","Black sans", arial !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+// LAPTOP
+@media #{$pc-screen}{
+
+  #BigStick{
+    position: fixed;
+    top: -200px;
+    right: -100px;
+  }
+
+  #SmallStick{
+    position: fixed;
+    bottom: 0px;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 70px;
+  }
+
+  #copyrighting{
+    font-size: $mob-text-min *1.2;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    transform: translateX(-50%);
+    color: $gray-flat;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: .5px;
+
+    &:hover{ text-decoration: underline;}
+  }
+
+  .principale{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px 0 !important;
+
+
+    #logo{
+      width: 150px;
+      height: auto;
+      margin-bottom: 100px !important;
+    }
+
+    .punchline{
+      height: 200px;
+      width: 100%;
+      // background: #ccc;
+
+      #nomSite{
+        color: $gray-flat;
+        font-size: $pc-text-min;
+      }
+
+      .slogan{
+        font-size: $pc-text-max *.9;
+        font-family: "Black sans" !important;
+        font-weight: bold;
+        letter-spacing: -2px;
+        margin-top: 20px !important;
+        max-width: 450px !important;
+      }
+
+      .carou{
+        width: auto;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        // background: $blanc;
+      }
+
+      #dot{
+        width: 35px !important;
+        height: 10px !important;
+        border-radius: 50px;
+        background: $gray-light;
+        margin-right: 5px !important;
+
+        &:first-child{
+          background: $orange-MB;
+        }
+      }
+    }
+
+    form{
+      height: 180px;
+      width: 100%;
+      // background: #ccc;
+      position: relative;
+
+
+      #signInBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 45px;
+        border-radius: 50px;
+        background: $orange-MB;
+        color: $blanc;
+        text-align: center;
+        margin: 0 !important;
+        // padding: 10px 0 0 !important;
+        font-size: $pc-text-min *1.1;
+
+        &:hover{ background: $orange; box-shadow: 2px 3px 4px #ccc; transition: .5s ease;}
+      }
+
+      #signUpBtn, #aboutBtn{
+        position: absolute;
+        flex-direction: row;
+        width: 100px !important;
+        height: 35px !important;
+        border-radius: 50px;
+        border: 1px solid $gray-light;
+        margin: 0 !important;
+        padding-top: 7px !important;
+        text-align: center;
+        color: $gray-flat;
+
+        &:hover{background: $gray-flat; border-color: transparent; color: $blanc; transition: .5s ease;}
+      }
+
+      #aboutBtn{
+        left: 150px;
+      }
+
+      #signUpBtn{
+        left: 0px;
+      }
+    }
+  }
+
+  .decorative{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      margin-top: 100px !important;
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+
+// MOBILE
+@media #{$smart-screen}{
+
+  body, html{
+    position: relative;
+    overflow: hidden !important;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #BigStick{
+    position: fixed;
+    top: -70px;
+    right: -90px;
+    max-width: 180px;
+    width: 50%;
+    height: auto;
+    z-index: 100;
+    // display: none;
+  }
+
+  #SmallStick{
+    // display: none;
+    position: fixed;
+    left: 15%;
+    bottom: -10px;
+    width: 80px;
+    height: auto;
+  }
+
+  #copyrighting{
+    display: none;
+  }
+
+  .decorative{
+    display: none;
+  }
+
+  .principale{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    // max-height: 100vh;
+    height: auto !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding: 0 10px !important;
+
+    #logo{
+      // max-width: 150px;
+      width: 50%;
+      height: auto;
+      // margin-bottom: 100px !important;
+      margin-bottom: 40px !important;
+    }
+
+    .punchline{
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      #nomSite{
+        font-size: $mob-text-med;
+      }
+
+      .slogan{
+        font-size: $mob-text-max;
+        letter-spacing: -1.5px;
+        margin: 0 !important;
+        max-width: 250px !important;
+      }
+
+      .carou{
+        margin: 15px 0 15px !important;
+      }
+
+      #dot{
+        width: 15px !important;
+        height: 5px !important;
+        background: $gray-flat;
+      }
+    }
+
+    form{
+      height: 150px;
+      width: 100%;
+      margin: 30px 0 0 0;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 10px;
+
+      #signInBtn{
+        width: 150px;
+        height: 40px;
+        font-weight: bold;
+        letter-spacing: .5px;
+        font-size: $mob-text-med *1.2;
+      }
+
+      #signUpBtn{
+        display: block;
+        width: 150px;
+        height: 40px;
+        left: -35px;
+        border-radius: 0 50px 50px 0;
+        margin-top: 3px !important;
+        padding: 8px 0 0 13px !important;
+        font-size: $mob-text-med;
+
+      }
+
+      #aboutBtn{
+        display: block;
+        width: 150px;
+        height: 40px;
+        left: auto !important;
+        right: -35px;
+        border-radius: 50px 0 0 50px;
+        margin-top: 3px !important;
+        font-size: $mob-text-med;
+        padding: 8px 13px 0 0 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 600px){
+
+  #BigStick{
+    display: none !important;
+  }
+
+  #SmallStick{
+    width: 75px !important;
+    height: auto;
+  }
+
+  form{
+    height: 150px !important;
+    margin-top: 10px !important;
+  }
+}
