@@ -101,7 +101,7 @@ body {
     background: rgba(230, 230, 230, 0.8);
     border-radius: 5px; }
   .articleHeader {
-    position: absolute;
+    position: fixed;
     width: 50%;
     height: 150px;
     background: #fff;
