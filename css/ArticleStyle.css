@@ -71,9 +71,9 @@ td:not([align]), th:not([align]) {
 /** PC-Screen ***/
 body {
   width: 100%;
-  height: 100vh;
+  height: auto !important;
   font-family: "Product sans","Black sans", arial !important;
-  padding: 0 0 150px !important;
+  padding: 0 0 50px !important;
   margin: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +85,19 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(230, 230, 230, 0.4) !important; }
+  background: rgba(230, 230, 230, 0.9) !important; }
+
+.progress {
+  background: orangered !important;
+  position: fixed;
+  top: 0px;
+  bottom: auto;
+  left: 0;
+  width: 50%;
+  height: 5px !important;
+  z-index: 1000;
+  margin: 0 !important;
+  padding: 0 !important; }
 
 @media only screen and (max-width: 3840px) {
   marquee {
@@ -103,7 +115,7 @@ body {
   .articleHeader {
     position: fixed;
     width: 50%;
-    height: 150px;
+    height: 70px;
     background: #fff;
     padding: 20px !important;
     display: -webkit-box;
@@ -127,8 +139,11 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 170px 50px 200px !important;
-    margin-bottom: 150px !important; }
+    padding: 80px 50px 200px !important;
+    margin-bottom: 0px !important;
+    -webkit-box-shadow: 5px 5px 10px #ddd;
+    box-shadow: 5px 5px 10px #ddd;
+    border-radius: 0 0 10px 10px; }
     .arti #alaune {
       height: auto;
       width: 100%;
@@ -160,7 +175,7 @@ body {
       .arti .branche:hover {
         border-top: 1px solid #CDCDCD; }
         .arti .branche:hover p {
-          color: #627d9d; }
+          color: #000; }
       .arti .branche .titre1 {
         font-size: 26.4px;
         font-weight: 1000;
@@ -214,6 +229,10 @@ body {
         transition: 1s ease; } }
 
 @media only screen and (max-width: 668px) {
+  body {
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important; }
   .articleHeader {
     width: 100%;
     height: 70px;
@@ -229,7 +248,7 @@ body {
   .arti {
     background: #fff;
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -240,8 +259,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 20px 20px 100px !important;
-    overflow-y: scroll; }
+    padding: 80px 20px 100px !important;
+    overflow-y: scroll;
+    margin-bottom: 0 !important; }
     .arti::-webkit-scrollbar {
       display: none; }
     .arti .enumeration {

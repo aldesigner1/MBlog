@@ -5,15 +5,29 @@
 body{
   // overflow: hidden !important;
   width: 100%;
-  height: 100vh;
+  height: auto !important;
   font-family: "Product sans","Black sans", arial !important;
-  padding: 0 0 150px !important;
+  padding: 0 0 50px !important;
   margin: 0 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba($gray-light, 0.4) !important;
+  background: rgba($gray-light, 0.9) !important;
 }
+
+.progress{
+    background: orangered !important;
+    position: fixed;
+    top: 0px;
+    bottom: auto;
+    left: 0;
+    width: 50%;
+    height: 5px !important;
+    z-index: 1000;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 
 // LAPTOP
 @media #{$pc-screen}{
@@ -38,7 +52,7 @@ body{
   .articleHeader{
     position: fixed;
     width: 50%;
-    height: 150px;
+    height: 70px;
     background: $blanc;
     padding: 20px !important;
     display: flex;
@@ -49,14 +63,17 @@ body{
 
 
   .arti{
+    // position: relative;
     background: $blanc !important;
     width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 170px 50px 200px !important;
-    margin-bottom: 150px !important;
+    padding: 80px 50px 200px !important;
+    margin-bottom: 0px !important;
+    box-shadow: 5px 5px 10px #ddd;
+    border-radius: 0 0 10px 10px;
     // overflow-y: scroll;
     //
     // &::-webkit-scrollbar {
@@ -108,7 +125,7 @@ body{
 
       &:hover{
         border-top: 1px solid $gray;
-        p{color: $gray-flat;}
+        p{color: $noir;}
       }
       .titre1{
         font-size: $pc-text-med *1.2;
@@ -184,6 +201,12 @@ body{
 // MOBILE
 @media #{$smart-screen}{
 
+  body{
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .articleHeader{
     width: 100%;
     height: 70px;
@@ -197,12 +220,13 @@ body{
   .arti{
     background: $blanc;
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px 100px !important;
+    padding: 80px 20px 100px !important;
     overflow-y: scroll;
+    margin-bottom: 0 !important;
 
     &::-webkit-scrollbar {
         display: none;
