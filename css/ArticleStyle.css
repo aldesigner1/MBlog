@@ -73,8 +73,8 @@ body {
   width: 100%;
   height: auto !important;
   font-family: "Product sans","Black sans", arial !important;
-  padding: 0 0 50px !important;
-  margin: 0 !important;
+  padding: 0px 0 50px !important;
+  margin: 0px 0 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +124,23 @@ body {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     border-bottom: 1px solid #E6E6E6; }
+    .articleHeader #readingTime {
+      font-size: 20.4px;
+      font-style: italic;
+      margin-bottom: 0px !important;
+      color: #ff9900; }
+      .articleHeader #readingTime:hover {
+        text-decoration: underline !important;
+        color: #627d9d; }
+      .articleHeader #readingTime span {
+        font-weight: bold;
+        color: #627d9d; }
+    .articleHeader svg {
+      width: 30px; }
   .arti {
     background: #fff !important;
     width: 50%;
@@ -235,16 +251,33 @@ body {
     padding: 0 !important; }
   .articleHeader {
     width: 100%;
-    height: 70px;
+    height: 50px;
     background: #fff;
-    padding: 20px !important;
+    padding: 5px 15px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     border-bottom: 1px solid #E6E6E6; }
+    .articleHeader #readingTime {
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 7px !important;
+      color: #ff9900; }
+      .articleHeader #readingTime:hover {
+        text-decoration: underline; }
+      .articleHeader #readingTime span {
+        font-weight: bold;
+        color: #627d9d; }
+      .articleHeader #readingTime label {
+        color: #627d9d; }
+    .articleHeader svg {
+      width: 22px; }
   .arti {
     background: #fff;
     width: 100%;
@@ -261,7 +294,8 @@ body {
     align-items: center;
     padding: 80px 20px 100px !important;
     overflow-y: scroll;
-    margin-bottom: 0 !important; }
+    margin-bottom: 0 !important;
+    border-radius: 0; }
     .arti::-webkit-scrollbar {
       display: none; }
     .arti .enumeration {
