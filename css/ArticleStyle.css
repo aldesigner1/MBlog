@@ -54,11 +54,6 @@ td:not([align]), th:not([align]) {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
 
-@font-face {
-  font-family: "Black Sans";
-  src: url("CustomFont.eot");
-  src: url("CustomFont.woff") format("woff"), url("Assets/fonts/blacksansboldwebfont949ef363c646d9c2456af9d67a94778f.otf") format("opentype"); }
-
 /** Colorimetrie **/
 /**  Couleurs MBlog  **/
 /** Taille de Police **/
@@ -99,6 +94,89 @@ body {
   margin: 0 !important;
   padding: 0 !important; }
 
+.mode {
+  padding: 5px 20px !important;
+  border-radius: 22px; }
+
+.change {
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 40%;
+  width: 20px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px; }
+
+.light .articleHeader #lune {
+  display: none !important; }
+
+.light .articleHeader #soleil {
+  display: inline-block !important; }
+
+.light .change {
+  background: rgba(230, 230, 230, 0.9) !important;
+  border-color: transparent; }
+  .light .change:hover {
+    background: #627d9d !important; }
+    .light .change:hover svg, .light .change:hover path {
+      fill: #000 !important; }
+
+.dark {
+  background-color: #191E21 !important;
+  color: #e6e6e6 !important; }
+  .dark .articleHeader #soleil {
+    display: none !important; }
+  .dark .articleHeader #lune {
+    display: inline-block !important; }
+
+.semi-dark {
+  background: #1D2326 !important;
+  color: #e6e6e6 !important;
+  -webkit-box-shadow: 3px 2px 10px rgba(247, 99, 12, 0) !important;
+  box-shadow: 3px 2px 10px rgba(247, 99, 12, 0) !important; }
+  .semi-dark .sujet {
+    color: #fff !important; }
+  .semi-dark .introduction:hover, .semi-dark .parag:hover {
+    color: #ccc !important; }
+  .semi-dark .cta {
+    background: #000 !important;
+    border-color: #68768A !important; }
+    .semi-dark .cta:hover {
+      background: #ff9900 !important;
+      color: #000 !important; }
+  .semi-dark .branche:hover p {
+    color: #ccc !important; }
+  .semi-dark .enumeration {
+    background: #111 !important;
+    border-color: #000 !important; }
+    .semi-dark .enumeration:hover {
+      background: #111 !important;
+      border-color: #68768A !important;
+      -webkit-transition: 1s ease;
+      -o-transition: 1s ease;
+      transition: 1s ease; }
+
+.ter-dark {
+  background: #1D2326 !important;
+  border-bottom: 1px solid #000 !important; }
+  .ter-dark svg, .ter-dark path {
+    fill: #627d9d !important; }
+  .ter-dark line {
+    stroke: #ff9900 !important; }
+  .ter-dark marquee {
+    background: #000 !important; }
+  .ter-dark .change {
+    background: rgba(98, 125, 157, 0.3) !important;
+    border-color: transparent; }
+    .ter-dark .change:hover {
+      background: black !important; }
+      .ter-dark .change:hover svg, .ter-dark .change:hover path {
+        fill: #FF8C00 !important; }
+  .ter-dark #readingTime {
+    color: #627d9d !important; }
+    .ter-dark #readingTime span {
+      color: rgba(98, 125, 157, 0.6) !important; }
+
 @media only screen and (max-width: 3840px) {
   marquee {
     width: 25px;
@@ -128,6 +206,8 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     border-bottom: 1px solid #E6E6E6; }
+    .articleHeader marquee {
+      background: rgba(98, 125, 157, 0.2) !important; }
     .articleHeader #readingTime {
       font-size: 20.4px;
       font-style: italic;
@@ -136,13 +216,14 @@ body {
       .articleHeader #readingTime:hover {
         text-decoration: underline !important;
         color: #627d9d; }
+      .articleHeader #readingTime #time {
+        font-weight: 900; }
       .articleHeader #readingTime span {
-        font-weight: bold;
         color: #627d9d; }
     .articleHeader svg {
       width: 30px; }
   .arti {
-    background: #fff !important;
+    background: #fff;
     width: 50%;
     height: auto;
     display: -webkit-box;
@@ -220,9 +301,9 @@ body {
         .arti .branche .cta:hover {
           color: #fff;
           background: #ff9900;
-          -webkit-transition: 1s ease;
-          -o-transition: 1s ease;
-          transition: 1s ease; }
+          -webkit-transition: .5s ease;
+          -o-transition: .5s ease;
+          transition: .5s ease; }
     .arti .enumeration {
       width: 80%;
       height: auto;

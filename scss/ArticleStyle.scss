@@ -28,6 +28,139 @@ body{
     padding: 0 !important;
 }
 
+.mode{
+
+  padding: 5px 20px !important;
+  // border: 1px solid $gray-flat;
+  border-radius: 22px;
+}
+
+.change {
+      cursor: pointer;
+      border: 1px solid #555;
+      border-radius: 40%;
+      width: 20px;
+      text-align: center;
+      padding: 5px;
+      margin-left: 8px;
+  }
+
+.light{
+  .articleHeader #lune{
+    display: none !important;
+  }
+  .articleHeader #soleil{
+    display: inline-block !important;
+  }
+  .change{
+    background: rgba($gray-light,0.9) !important;
+    border-color: transparent;
+
+    &:hover{
+      background: rgba($gray-flat,1) !important;
+      svg, path{fill: $noir !important;}
+    }
+  }
+}
+
+.dark{
+    background-color: #191E21 !important;
+    color: #e6e6e6 !important;
+
+    .articleHeader #soleil{
+      display: none !important;
+    }
+
+    .articleHeader #lune{
+      display: inline-block !important;
+    }
+}
+
+.semi-dark{
+  background: #1D2326 !important;
+  color: #e6e6e6 !important;
+  box-shadow: 3px 2px 10px rgba($orange-dark,0) !important;
+
+  .sujet{
+    color: $blanc !important;
+  }
+
+  .introduction, .parag{
+
+    &:hover{
+      color: #ccc !important;
+    }
+  }
+
+  .cta{
+    background: $noir !important;
+    border-color: $gray-dark !important;
+
+    &:hover{
+      background: $orange-MB !important;
+      color: $noir !important;
+    }
+  }
+
+  .branche{
+
+    &:hover{
+      p{ color: #ccc !important;}
+    }
+  }
+
+  .enumeration{
+    background: #111 !important;
+    border-color: $noir !important;
+
+    &:hover{
+      background: #111 !important;
+      border-color: $gray-dark !important;
+      transition: 1s ease;
+    }
+  }
+
+}
+
+.ter-dark{
+  background: #1D2326 !important;
+  border-bottom: 1px solid #000 !important;
+
+
+  svg, path{
+    fill: $gray-flat !important;
+  }
+
+  line{
+    stroke: $orange-MB !important;
+  }
+
+  marquee{
+    background: $noir !important;
+  }
+
+  .change{
+    background: rgba($gray-flat,0.3) !important;
+    border-color: transparent;
+
+    &:hover{
+      background: rgba($noir,1) !important;
+      svg, path{fill: $orange !important;}
+    }
+
+  }
+
+  #readingTime{
+    color: $gray-flat !important;
+
+    span{
+      color: rgba($gray-flat,0.6) !important;
+    }
+  }
+
+
+}
+
 
 // LAPTOP
 @media #{$pc-screen}{
@@ -60,6 +193,10 @@ body{
     justify-content: space-between;
     border-bottom: 1px solid $gray-light;
 
+    marquee{
+      background: rgba($gray-flat, 0.2) !important;
+    }
+
     #readingTime{
       font-size: $pc-text-min*1.2;
       font-style: italic;
@@ -72,7 +209,8 @@ body{
         color: $gray-flat;
       }
 
-      span{font-weight: bold; color: $gray-flat;}
+      #time{font-weight: 900;}
+      span{ color: $gray-flat;}
     }
 
     svg{
@@ -84,7 +222,7 @@ body{
 
   .arti{
     // position: relative;
-    background: $blanc !important;
+    background: $blanc;
     width: 50%;
     height: auto;
     display: flex;
@@ -183,7 +321,7 @@ body{
         &:hover{
           color: $blanc;
           background: $orange-MB;
-          transition: 1s ease;
+          transition: .5s ease;
         }
       }
     }
