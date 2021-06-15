@@ -107,21 +107,38 @@ body {
   padding: 5px;
   margin-left: 8px; }
 
-.light .articleHeader #lune {
-  display: none !important; }
-
-.light .articleHeader #soleil {
-  display: inline-block !important; }
-
-.light .change {
-  background: rgba(230, 230, 230, 0.9) !important;
-  border-color: transparent; }
-  .light .change:hover {
-    background: #627d9d !important; }
-    .light .change:hover svg, .light .change:hover path {
-      fill: #000 !important; }
+.light {
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease; }
+  .light .articleHeader #lune {
+    display: none !important; }
+  .light .articleHeader #soleil {
+    display: inline-block !important; }
+  .light .change {
+    background: rgba(230, 230, 230, 0.9) !important;
+    border-color: transparent; }
+    .light .change:hover {
+      background: #627d9d !important; }
+      .light .change:hover svg, .light .change:hover path {
+        fill: #000 !important; }
+  .light .arti, .light .articleHeader, .light .cta {
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
+    transition: 2s ease;
+    background: #fff; }
+  .light .enumeration {
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
+    transition: 2s ease;
+    background: rgba(230, 230, 230, 0.3); }
+    .light .enumeration:hover {
+      border-color: #CDCDCD !important; }
 
 .dark {
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
   background-color: #191E21 !important;
   color: #e6e6e6 !important; }
   .dark .articleHeader #soleil {
@@ -130,39 +147,51 @@ body {
     display: inline-block !important; }
 
 .semi-dark {
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
   background: #1D2326 !important;
   color: #e6e6e6 !important;
-  -webkit-box-shadow: 3px 2px 10px rgba(247, 99, 12, 0) !important;
-  box-shadow: 3px 2px 10px rgba(247, 99, 12, 0) !important; }
+  -webkit-box-shadow: 3px 2px 10px rgba(0, 0, 0, 0) !important;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0) !important; }
   .semi-dark .sujet {
     color: #fff !important; }
+    .semi-dark .sujet:hover {
+      color: #ff9900 !important; }
   .semi-dark .introduction:hover, .semi-dark .parag:hover {
     color: #ccc !important; }
   .semi-dark .cta {
-    background: #000 !important;
-    border-color: #68768A !important; }
+    background: #191E21 !important;
+    border-color: rgba(98, 125, 157, 0.3) !important; }
     .semi-dark .cta:hover {
       background: #ff9900 !important;
       color: #000 !important; }
   .semi-dark .branche:hover p {
     color: #ccc !important; }
   .semi-dark .enumeration {
-    background: #111 !important;
-    border-color: #000 !important; }
+    background: rgba(17, 17, 17, 0.3) !important;
+    border-color: transparent !important; }
     .semi-dark .enumeration:hover {
       background: #111 !important;
       border-color: #68768A !important;
-      -webkit-transition: 1s ease;
-      -o-transition: 1s ease;
-      transition: 1s ease; }
+      -webkit-transition: 2s ease;
+      -o-transition: 2s ease;
+      transition: 2s ease; }
 
 .ter-dark {
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
   background: #1D2326 !important;
   border-bottom: 1px solid #000 !important; }
   .ter-dark svg, .ter-dark path {
     fill: #627d9d !important; }
   .ter-dark line {
     stroke: #ff9900 !important; }
+  .ter-dark #line_5 {
+    color: #FF8C00 !important;
+    fill: #FF8C00 !important;
+    stroke: #FF8C00 !important; }
   .ter-dark marquee {
     background: #000 !important; }
   .ter-dark .change {
@@ -174,6 +203,8 @@ body {
         fill: #FF8C00 !important; }
   .ter-dark #readingTime {
     color: #627d9d !important; }
+    .ter-dark #readingTime:hover span {
+      color: #ccc !important; }
     .ter-dark #readingTime span {
       color: rgba(98, 125, 157, 0.6) !important; }
 
@@ -249,7 +280,7 @@ body {
       font-size: 36px;
       font-weight: 1000;
       letter-spacing: -1px;
-      margin: 20px auto !important;
+      margin: 50px auto 20px !important;
       text-align: center;
       color: #000; }
       .arti .sujet:hover {
@@ -307,12 +338,14 @@ body {
     .arti .enumeration {
       width: 80%;
       height: auto;
-      padding: 30px !important;
+      padding: 30px 15px 30px 45px !important;
       border: 1px solid #E6E6E6;
       border-radius: 15px;
-      list-style: none;
       margin: 30px auto !important;
-      font-size: 15.3px; }
+      font-size: 17px;
+      font-style: italic;
+      letter-spacing: .7px;
+      font-weight: bold; }
       .arti .enumeration li {
         margin: 30px auto !important; }
         .arti .enumeration li a {
