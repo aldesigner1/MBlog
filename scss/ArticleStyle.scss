@@ -30,7 +30,7 @@ body{
 
 .mode{
 
-  padding: 5px 20px !important;
+  padding: 5px 0px !important;
   // border: 1px solid $gray-flat;
   border-radius: 22px;
 }
@@ -183,6 +183,7 @@ body{
 
   #readingTime{
     color: $gray-flat !important;
+    font-weight: bold !important;
 
     &:hover span{
       color: #ccc !important;
@@ -190,6 +191,7 @@ body{
 
     span{
       color: rgba($gray-flat,0.6) !important;
+      font-weight: bold !important;
     }
   }
 
@@ -401,6 +403,10 @@ body{
     height: auto;
     margin: 0 !important;
     padding: 0 !important;
+  }
+
+  #readingTime span{
+    font-size: $mob-text-med*1.1 !important;
   }
 
   .articleHeader{

@@ -95,7 +95,7 @@ body {
   padding: 0 !important; }
 
 .mode {
-  padding: 5px 20px !important;
+  padding: 5px 0px !important;
   border-radius: 22px; }
 
 .change {
@@ -202,11 +202,13 @@ body {
       .ter-dark .change:hover svg, .ter-dark .change:hover path {
         fill: #FF8C00 !important; }
   .ter-dark #readingTime {
-    color: #627d9d !important; }
+    color: #627d9d !important;
+    font-weight: bold !important; }
     .ter-dark #readingTime:hover span {
       color: #ccc !important; }
     .ter-dark #readingTime span {
-      color: rgba(98, 125, 157, 0.6) !important; }
+      color: rgba(98, 125, 157, 0.6) !important;
+      font-weight: bold !important; }
 
 @media only screen and (max-width: 3840px) {
   marquee {
@@ -363,6 +365,8 @@ body {
     height: auto;
     margin: 0 !important;
     padding: 0 !important; }
+  #readingTime span {
+    font-size: 14.3px !important; }
   .articleHeader {
     width: 100%;
     height: 50px;
