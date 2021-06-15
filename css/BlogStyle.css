@@ -54,11 +54,6 @@ td:not([align]), th:not([align]) {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"); }
 
-@font-face {
-  font-family: "Black Sans";
-  src: url("CustomFont.eot");
-  src: url("CustomFont.woff") format("woff"), url("Assets/fonts/blacksansboldwebfont949ef363c646d9c2456af9d67a94778f.otf") format("opentype"); }
-
 /** Colorimetrie **/
 /**  Couleurs MBlog  **/
 /** Taille de Police **/
@@ -175,6 +170,21 @@ body {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       overflow-y: scroll; }
+      .sectionBlog ol::-webkit-scrollbar {
+        width: 10px;
+        /* width of the entire scrollbar */ }
+      .sectionBlog ol::-webkit-scrollbar-track {
+        background: rgba(230, 230, 230, 0.2);
+        /* color of the tracking area */ }
+      .sectionBlog ol::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        /* color of the scroll thumb */
+        border-radius: 15px;
+        /* roundness of the scroll thumb */
+        border: 2px solid rgba(98, 125, 157, 0.5);
+        /* creates padding around scroll thumb */
+        -webkit-box-shadow: 0px 2px 2px #ccc;
+        box-shadow: 0px 2px 2px #ccc; }
       .sectionBlog ol li {
         position: relative;
         width: 275px;
