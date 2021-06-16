@@ -64,6 +64,10 @@ body{
     }
   }
 
+  .recommandation{
+    border-color: $gray-light !important;
+  }
+
   .arti, .articleHeader, .cta{
     transition: 2s ease;
     background: $blanc;
@@ -102,6 +106,7 @@ body{
 
   .sujet{
     color: $blanc !important;
+    text-transform: uppercase;
 
     &:hover{
       color: $orange-MB !important;
@@ -132,6 +137,7 @@ body{
     }
   }
 
+
   .enumeration{
     background: rgba(#111, 0.3) !important;
     border-color: transparent !important;
@@ -141,6 +147,10 @@ body{
       border-color: $gray-dark !important;
       transition: 2s ease;
     }
+  }
+
+  .recommandation{
+    border-color: $gray-flat !important;
   }
 
 }
@@ -314,6 +324,18 @@ body{
       font-weight: bold;
     }
 
+    .recommandation{
+      width: 90%;
+      background: $t;
+      border-radius: 5px;
+      border: 1px solid $gray-flat;
+      padding: 15px 30px !important;
+      line-height: 25px;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+    }
+
     .branche{
       margin: 30px auto !important;
       border-top: 1px solid transparent;
@@ -333,6 +355,7 @@ body{
           color: $orange-MB;
         }
       }
+    }
 
       .parag{
         width: 100%;
@@ -361,7 +384,6 @@ body{
           transition: .5s ease;
         }
       }
-    }
 
     .enumeration{
       width: 80%;
@@ -396,6 +418,17 @@ body{
   }
 }
 
+// TABLET
+@media #{$tablet-screen}{
+
+  .articleHeader, .arti{
+    width: 80%;
+  }
+
+  .recommandation{
+    width: 90%;
+  }
+}
 // MOBILE
 @media #{$smart-screen}{
 
@@ -407,6 +440,10 @@ body{
 
   #readingTime span{
     font-size: $mob-text-med*1.1 !important;
+  }
+
+  .recommandation{
+    width: 100% !important;
   }
 
   .articleHeader{
