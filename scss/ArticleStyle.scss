@@ -66,6 +66,7 @@ body{
 
   .recommandation{
     border-color: $gray-light !important;
+    background: #fff;
   }
 
   .arti, .articleHeader, .cta{
@@ -122,7 +123,8 @@ body{
 
   .cta{
     background: #191E21 !important;
-    border-color: rgba($gray-flat, 0.3) !important;
+    color: $orange-MB !important;
+    border-color: rgba($orange-MB, 0.3) !important;
 
     &:hover{
       background: $orange-MB !important;
@@ -147,10 +149,12 @@ body{
       border-color: $gray-dark !important;
       transition: 2s ease;
     }
+
   }
 
   .recommandation{
     border-color: $gray-flat !important;
+    background: #111;
   }
 
 }
@@ -331,7 +335,7 @@ body{
       border: 1px solid $gray-flat;
       padding: 15px 30px !important;
       line-height: 25px;
-      text-align: justify;
+      text-align: center;
       display: flex;
       flex-direction: column;
     }
@@ -444,6 +448,12 @@ body{
 
   .recommandation{
     width: 100% !important;
+    // padding: 130px 20px !important;
+
+    .info{
+      font-size: $mob-text-med*1.5 !important;
+      margin-top: 25px !important;
+    }
   }
 
   .articleHeader{
@@ -494,6 +504,23 @@ body{
 
     .enumeration{
       width: 100%;
+    }
+
+    .cta{
+      background: $orange-MB;
+      // background: $blanc;
+      padding: 10px 35px !important;
+      border-radius: 5px;
+      color: $blanc;
+      // color: $gray-flat;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 35px auto !important;
+      border: 1px solid $gray-light;
+
+      &:hover{
+        transition: .5s ease;
+      }
     }
   }
 }
