@@ -338,6 +338,13 @@ body{
       text-align: center;
       display: flex;
       flex-direction: column;
+
+      .info{
+        margin-top: 30px !important;
+        font-weight: light;
+        font-size: $pc-text-min*1.1;
+
+      }
     }
 
     .branche{

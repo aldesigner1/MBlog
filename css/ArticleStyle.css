@@ -322,6 +322,10 @@ body {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
+      .arti .recommandation .info {
+        margin-top: 30px !important;
+        font-weight: light;
+        font-size: 18.7px; }
     .arti .branche {
       margin: 30px auto !important;
       border-top: 1px solid transparent; }
