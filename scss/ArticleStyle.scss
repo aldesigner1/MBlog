@@ -349,6 +349,8 @@ body{
         p{color: $noir;}
       }
       .titre1{
+        display: flex;
+        align-items: flex-end;
         font-size: $pc-text-med *1.2;
         font-weight: 1000;
         font-family: "product sans black";

@@ -330,6 +330,12 @@ body {
         .arti .branche:hover p {
           color: #000; }
       .arti .branche .titre1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
         font-size: 26.4px;
         font-weight: 1000;
         font-family: "product sans black";

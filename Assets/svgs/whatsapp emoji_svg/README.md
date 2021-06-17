@@ -1,0 +1,1 @@
+emoji that are part of the "writing on pictures" feature when using the whatsapp camera-feature.
