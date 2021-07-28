@@ -295,6 +295,10 @@ body{
       width: 100%;
       max-width: 100%;
     }
+    #smallPCT{
+      max-width: 450px !important;
+      height: auto;
+    }
 
     .sujet{
       font-size: $pc-text-max *0.8;
@@ -345,6 +349,19 @@ body{
         font-size: $pc-text-min*1.1;
 
       }
+      .old_price{
+        color: #C3C3C3;
+        font-size: 30px;
+        text-decoration: line-through;
+        font-weight: bold;
+      }
+      .new_price{
+        color: #FF9813;
+        font-size: 30px;
+        // text-decoration: line-through;
+        font-weight: bold;
+        margin-top: 15px;
+      }
     }
 
     .branche{
@@ -361,13 +378,40 @@ body{
         font-size: $pc-text-med *1.2;
         font-weight: 1000;
         font-family: "product sans black";
-        margin: 15px auto 15px !important;
+        margin: 40px auto 60px !important;
 
         &:hover{
           text-decoration: underline;
           color: $orange-MB;
         }
       }
+      .image_text1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+          height: 190px !important;
+          width: auto;
+          margin-right: 30px !important;
+        }
+      }
+      .image_text2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+          height: 190px !important;
+          width: auto;
+          margin-left: 30px !important;
+        }
+      }
+
+    }
+    .text_fin{
+      color: #ED7D31;
+      font-size: 15px;
+      margin-top: 40px !important;
+
     }
 
       .parag{
