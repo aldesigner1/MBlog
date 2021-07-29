@@ -547,6 +547,41 @@ body {
     padding: 0 !important;
   }
 
+  .arti .branche .image_text1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arti .branche .image_text1 img {
+    height: 190px !important;
+    width: auto;
+    margin-right: 0px !important;
+  }
+  .arti .branche .image_text2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arti .branche .image_text2 img {
+    height: 190px !important;
+    width: auto;
+    margin-left: 0px !important;
+  }
+
   #readingTime span {
     font-size: 14.3px !important;
   }

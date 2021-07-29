@@ -493,6 +493,34 @@ body{
     margin: 0 !important;
     padding: 0 !important;
   }
+.arti{
+  .branche{
+    .image_text1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        height: 190px !important;
+        width: auto;
+        margin-right: 0px !important;
+      }
+    }
+    .image_text2{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img{
+        height: 190px !important;
+        width: auto;
+        margin-left: 0px !important;
+      }
+    }
+  }
+}
+
+
+
+
 
   #readingTime span{
     font-size: $mob-text-med*1.1 !important;
